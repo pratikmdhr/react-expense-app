@@ -6,10 +6,10 @@ import ExpenseDate from './ExpenseDate';
 const ExpenseItem = (props) => {
   const [title, setTitle] = useState(props.title);
 
-  const clickHandler = () => {
-    setTitle('Yay');
-    console.log(title);
-  };
+  // const clickHandler = () => {
+  //   setTitle('Yay');
+  //   console.log(title);
+  // };
 
   return (
     <li>
@@ -19,7 +19,7 @@ const ExpenseItem = (props) => {
           <h2>{title}</h2>
           <div className='expense-item__price'>{`$${props.amount}`}</div>
         </div>
-        <button onClick={clickHandler}>Change Title</button>
+        {/* <button onClick={clickHandler}>Change Title</button> */}
       </Card>
     </li>
   );
